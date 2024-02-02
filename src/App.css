@@ -1,38 +1,118 @@
-.App {
+/* src/App.css */
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FFECB3; /* Light yellow background */
+  color: #3949AB; /* Dark blue text color */
+}
+
+.landing-page {
   text-align: center;
+  padding: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.landing-page img {
+  max-width: 150px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.landing-page h1 {
+  font-size: 2.5em;
+  color: #E91E63; /* Pink heading color */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.landing-page p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #00897B; /* Teal text color */
+}
+
+.buttons {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  margin: 0 15px;
+  background-color: #3949AB; /* Dark blue button background */
+  color: #FFFFFF; /* White button text color */
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover {
+  background-color: #E91E63; /* Pink button background on hover */
+}
+
+/* Book Marketplace styles */
+.book-container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 20px;
+}
+
+.book-card {
+  border: 1px solid #3949AB;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  background-color: #FFFFFF; /* White background for book card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.book-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Poem Submission Form styles */
+.submission-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #FFFFFF; /* White background for form */
+  border: 1px solid #3949AB;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Common styles for form elements */
+label, input, textarea, button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+label {
+  font-size: 1.2em;
+  color: #3949AB;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #3949AB;
+  border-radius: 5px;
+}
+
+button {
+  padding: 15px;
+  background-color: #E91E63;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3949AB; /* Dark blue button background on hover */
 }
